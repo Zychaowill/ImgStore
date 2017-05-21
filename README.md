@@ -1,6 +1,6 @@
 # ResourceStore
 
-> The current repository is used to storing all kinds of learning resource.
+> The current repository is used to storing all kinds of learning resources.
 
 ## AssmblyProgram
 
