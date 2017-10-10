@@ -16,3 +16,6 @@
 
 ## Hadoop
   大数据Hadoop相关截图
+
+## Scala
+  Scala函数式编程学习
