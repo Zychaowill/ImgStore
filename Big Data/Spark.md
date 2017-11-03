@@ -26,4 +26,4 @@
 
 ## 推荐平台基础架构改进:lambda architecture
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/屏幕快照%202017-11-03%20下午8.21.42.png)
