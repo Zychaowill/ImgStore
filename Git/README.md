@@ -1,11 +1,13 @@
 # Git conflict
 
 If the command 'git pull origin master' generates a conflict, solution as follows:
+```bash
 git-br-feature1
+```
 
 For this case, Git can't execute 'fast merge' and only try to merge their own modifications, but the merge may conflict.
 
-Let' try to merge feature1 to master. When we execute the command 'git merge feature1', Some information will show up.
+Let's try to merge feature1 to master. When we execute the command 'git merge feature1', Some information will show up.
 ```bash
 $ git merge feature1
 Auto-merging readme.txt
@@ -35,10 +37,10 @@ Git is a distributed version control system.
 Git is free software distributed under the GPL.
 Git has a mutable index called stage.
 Git tracks changes of files.
-<<<<<<< HEAD Creating a new branch is quick & simple. 
-======= 
-Creating a new branch is quick AND simple. 
->>>>>>> 
+<<<<<<< HEAD Creating a new branch is quick & simple.
+=======
+Creating a new branch is quick AND simple.
+>>>>>>>
 feature1
 ```
 
@@ -55,17 +57,19 @@ Creating a new branch is quick AND simple.
 
 Next, we can submit our files.
 ```bash
-$ git add readme.txt 
+$ git add readme.txt
 $ git commit -m "conflict fixed"
 [master 59bc1cb] conflict fixed
 ```
 
 After some operations, the relationship of master and feature1 as follows:
+```bash
 git-br-conflict-merged
+```
 
-Of course, we can use 'git log' command to view the merge result of branches.
-Command as: git log --graph --pretty=oneline --abbrev-commit
-At last, we will delete feature1 branch.
+Of course, we can use 'git log' command to view the merge result of branches.<br/>
+Command as: ``` git log --graph --pretty=oneline --abbrev-commit ``` <br/>
+At last, we will delete feature1 branch.<br/>
 Finish work.
 
 ## Summary
