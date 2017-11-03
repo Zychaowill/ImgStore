@@ -57,10 +57,14 @@
 
 ### 2.3 实时训练模块
 
-#### 2.3.1
+#### 2.3.1 模型训练示例
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/屏幕快照%202017-11-03%20下午8.41.46.png)
 
 #### 2.3.2 更新用户标签
+
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/屏幕快照%202017-11-03%20下午8.42.35.png)
+
+## 3 Summary
 
 ![]()
