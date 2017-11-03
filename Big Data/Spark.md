@@ -42,3 +42,7 @@
 ### 2.1 整体架构
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/屏幕快照%202017-11-03%20下午8.29.15.png)
+
+### 2.2 离线训练模块
+
+![]()
