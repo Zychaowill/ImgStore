@@ -26,4 +26,12 @@
 
 - [Big data learning road map](http://blog.csdn.net/zhongqi2513/article/details/72852870?locationNum=5&fps=1)
 
+- [推荐算法](http://blog.csdn.net/gamer_gyt/article/details/74367714)
 
+##### algorithm and data structure
+
+- [算法与数据结构](http://blog.csdn.net/beichengll/article/category/7030991)
+
+- [算法集合](http://blog.csdn.net/jek123456/article/details/75004018)
+
+- [图算法](http://blog.csdn.net/hello_sheep/article/details/76474591)

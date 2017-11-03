@@ -9,3 +9,5 @@
 - [JDK源码中的设计模式](http://blog.csdn.net/baiye_xing/article/details/76427717)
 
 - [enter url then occurs](http://blog.csdn.net/universe_ant/article/details/77453063)
+
+- [开发中常用的5种远程调用方式](http://blog.csdn.net/xujiangdong1992/article/details/76434768)
