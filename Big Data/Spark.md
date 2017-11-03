@@ -13,3 +13,5 @@
 - 注册信息
 
 ## 推荐平台基础架构
+
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/屏幕快照%202017-11-03%20下午8.12.38.png)
