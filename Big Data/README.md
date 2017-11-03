@@ -77,3 +77,7 @@
 ##### technology stack of apache kafka for directory index
 
 - [apache kafka技术分享系列（目录索引）](http://blog.csdn.net/lizhitao/article/details/39499283)
+
+##### Picture of bigdata
+
+![](https://github.com/Zychaowill/ImgStore/blob/master/Big%20Data/technology%20stack.png)
