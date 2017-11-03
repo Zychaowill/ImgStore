@@ -56,6 +56,10 @@
 
 - [大数据相关技术栈](http://www.cnblogs.com/starcrm/p/7453968.html)
 
+- [ElasticSearch笔记（过滤查询）](http://blog.csdn.net/wthfeng/article/details/53001218)
+
+- [Lucene（车东）](http://www.chedong.com/tech/lucene.html)
+
 ##### technology stack of bigdata analysis
 
 - [大数据分析技术栈（一）HBase, Parquet](http://blog.csdn.net/qisibajie/article/details/56037821)

@@ -39,3 +39,11 @@
 - [一脸懵逼的学习Big Data](http://blog.csdn.net/biexiansheng)
 
 - [Java框架面经](http://blog.csdn.net/zhangchen124/article/details/77371786)
+
+#### project
+
+- [移动购物APP设计与实现](http://blog.csdn.net/chen364567628/article/details/74586994)
+
+- [通过Spring + Netty + Protostuff + Zookeeper实现一个轻量级RPC框架](http://blog.csdn.net/jek123456/article/details/53200613)
+
+- [Java实现Redis的消息订阅与发布](http://blog.csdn.net/qq_38921377/article/details/75006935)
