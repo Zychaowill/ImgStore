@@ -12,6 +12,8 @@
 
 - [Spark随笔](http://www.cnblogs.com/thinkpad/p/?page=2)
 
+- [大漠垂杨](http://www.cnblogs.com/quchunhui/default.html?page=8)
+
 - [Big Data & Scala](http://blog.csdn.net/sinat_31726559/article/details/51901832)
 
 - [Kafka](https://crossoverjie.top/2017/10/20/SSM17/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
