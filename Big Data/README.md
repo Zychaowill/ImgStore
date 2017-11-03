@@ -14,7 +14,7 @@
 
 - [大数据真实案例:Spark在美团的实现（上）](http://www.ppvke.com/Blog/archives/40204)
 
-- (Spark实时计算整合案例)[https://yq.aliyun.com/articles/59949]
+- [Spark实时计算整合案例](https://yq.aliyun.com/articles/59949)
 
 - [Spark系列](http://www.cnblogs.com/shishanyuan/p/4699644.html)
 
