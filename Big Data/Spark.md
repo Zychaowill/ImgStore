@@ -29,3 +29,7 @@
 > 实际场景也可以在Spark Streaming中调用机器学习库
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/屏幕快照%202017-11-03%20下午8.21.42.png)
+
+## 实时推荐模块
+
+![]()
