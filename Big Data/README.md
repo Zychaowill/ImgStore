@@ -40,6 +40,13 @@
 
 #### projects
 
+- [大数据项目开发步骤](http://blog.csdn.net/liubiaoxin/article/details/52751612)
+
 - [5个大数据实战项目](http://blog.csdn.net/lo3656485/article/details/39229557)
 
-- [Kafka + Flume + Spark Streaming](http://blog.csdn.net/Trigl/article/details/70237981)
+- [Kafka + Flume + Spark Streaming实时日志分析](http://blog.csdn.net/Trigl/article/details/70237981)
+
+- [实时日志收集—查询—分析 Kafka + ElasticSearch + Kibana](http://blog.csdn.net/yeruby/article/details/50756452)
+
+- [Flume + Kafka + Storm + Redis实时分析系统架构](http://blog.csdn.net/ymh198816/article/details/51998085)
+
