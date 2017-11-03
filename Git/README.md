@@ -53,7 +53,7 @@ Creating a new branch is quick AND simple.
 ```
 
 
-Next, we can sumit our files.
+Next, we can submit our files.
 ```bash
 $ git add readme.txt 
 $ git commit -m "conflict fixed"
