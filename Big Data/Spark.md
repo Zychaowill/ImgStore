@@ -54,3 +54,7 @@
 #### 2.2.2 模型训练示例
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/屏幕快照%202017-11-03%20下午8.39.19.png)
+
+### 2.3 实时训练模块
+
+![]()
