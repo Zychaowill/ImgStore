@@ -70,4 +70,5 @@ Finish work.
 
 ## Summary
 1#  When Git can't merge branches,  only to resolve all conflicts, then submit all files. Finish as last.
+
 2#  'git log --graph' command can view branch merge graph.
