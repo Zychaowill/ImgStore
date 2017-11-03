@@ -56,4 +56,18 @@
 
 - [大数据相关技术栈](http://www.cnblogs.com/starcrm/p/7453968.html)
 
+##### technology stack of bigdata analysis
 
+- [大数据分析技术栈（一）HBase, Parquet](http://blog.csdn.net/qisibajie/article/details/56037821)
+
+- [大数据分析技术栈（二）Kafka](http://blog.csdn.net/qisibajie/article/details/56482182)
+
+- [大数据分析技术栈（三）Hive](http://blog.csdn.net/qisibajie/article/details/58602992)
+
+- [大数据分析技术栈（四）Spark & Scala](http://blog.csdn.net/qisibajie/article/details/58603147)
+
+- [大数据分析技术栈（五）Impala](http://blog.csdn.net/qisibajie/article/details/58604347)
+
+##### technology stack of apache kafka for directory index
+
+- [apache kafka技术分享系列（目录索引）](http://blog.csdn.net/lizhitao/article/details/39499283)
