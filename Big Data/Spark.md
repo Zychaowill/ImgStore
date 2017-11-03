@@ -32,4 +32,4 @@
 
 ## 实时推荐模块
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/屏幕快照%202017-11-03%20下午8.24.08.png)
