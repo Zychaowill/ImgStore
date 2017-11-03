@@ -1,9 +1,7 @@
 # Git conflict
 
 If the command 'git pull origin master' generates a conflict, solution as follows:
-```bash
-git-br-feature1
-```
+![]()
 
 For this case, Git can't execute 'fast merge' and only try to merge their own modifications, but the merge may conflict.
 
@@ -63,9 +61,7 @@ $ git commit -m "conflict fixed"
 ```
 
 After some operations, the relationship of master and feature1 as follows:
-```bash
-git-br-conflict-merged
-```
+![]()
 
 Of course, we can use 'git log' command to view the merge result of branches.<br/>
 Command as: ``` git log --graph --pretty=oneline --abbrev-commit ``` <br/>
