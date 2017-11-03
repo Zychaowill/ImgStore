@@ -1,11 +1,11 @@
 # Git conflict
 
-If the command 'git pull origin master' generates a conflict, solution as follows:
+If the command ``` git pull origin master ``` generates a conflict, solution as follows:
 ![](https://github.com/Zychaowill/ImgStore/blob/master/Git/0.png)
 
 For this case, Git can't execute 'fast merge' and only try to merge their own modifications, but the merge may conflict.
 
-Let's try to merge feature1 to master. When we execute the command 'git merge feature1', Some information will show up.
+Let's try to merge feature1 to master. When we execute the command ``` git merge feature1 ```, Some information will show up.
 ```bash
 $ git merge feature1
 Auto-merging readme.txt
@@ -14,7 +14,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 ```
 
 
-For this, we can use 'git status' to view conflict files.
+For this, we can use ``` git status ``` to view conflict files.
 ```bash
 $ git status
 On branch master
@@ -63,7 +63,7 @@ $ git commit -m "conflict fixed"
 After some operations, the relationship of master and feature1 as follows:
 ![](https://github.com/Zychaowill/ImgStore/blob/master/Git/0-2.png)
 
-Of course, we can use 'git log' command to view the merge result of branches.<br/>
+Of course, we can use ``` git log ``` command to view the merge result of branches.<br/>
 Command as: ``` git log --graph --pretty=oneline --abbrev-commit ``` <br/>
 At last, we will delete feature1 branch.<br/>
 Finish work.
@@ -71,4 +71,4 @@ Finish work.
 ## Summary
 - 1#  When Git can't merge branches,  only to resolve all conflicts, then submit all files. Finish as last.
 
-- 2#  'git log --graph' command can view branch merge graph.
+- 2#  ``` git log --graph ``` command can view branch merge graph.
