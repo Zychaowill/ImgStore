@@ -45,4 +45,4 @@
 
 ### 2.2 离线训练模块
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/屏幕快照%202017-11-03%20下午8.32.37.png)
