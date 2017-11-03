@@ -16,6 +16,14 @@
 
 - [LeetCode总结](http://blog.csdn.net/lanxu_yy/article/details/17848219)
 
+- [Java集合的读写分离术](http://blog.csdn.net/wonderful_life_mrchi/article/details/77249385)
+
+- [从MVC到前后端分离](https://my.oschina.net/huangyong/blog/521891#OSC_h3_11)
+
+- [Thrift](http://www.cnblogs.com/TingyunAPM/p/5719385.html)
+
+- [Struct2回顾](http://blog.csdn.net/qq_34066220/article/details/76359461)
+
 #### experience summary
 
 - [those projects you can join](http://blog.csdn.net/xjmcsdn/article/details/52403618)
@@ -29,3 +37,5 @@
 - [Java项目经验—程序员成长的钥匙](http://www.jianshu.com/p/88156d6dcd09)
 
 - [一脸懵逼的学习Big Data](http://blog.csdn.net/biexiansheng)
+
+- [Java框架面经](http://blog.csdn.net/zhangchen124/article/details/77371786)

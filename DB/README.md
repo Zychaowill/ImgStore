@@ -9,3 +9,5 @@
 - [数据库SQL优化之百万级数据库优化经验](http://database.51cto.com/art/201407/445934.htm)
 
 - [高手详解SQL性能优化十条经验](http://database.51cto.com/art/200904/118526.htm)
+
+- [MySQL主从复制](http://blog.csdn.net/a491857321/article/details/52539983)

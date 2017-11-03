@@ -10,6 +10,8 @@
 
 - [大牛笔记](http://www.daniubiji.cn/archives/596)
 
+- [Spark随笔](http://www.cnblogs.com/thinkpad/p/?page=2)
+
 - [Big Data & Scala](http://blog.csdn.net/sinat_31726559/article/details/51901832)
 
 - [Kafka](https://crossoverjie.top/2017/10/20/SSM17/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
@@ -35,3 +37,9 @@
 - [算法集合](http://blog.csdn.net/jek123456/article/details/75004018)
 
 - [图算法](http://blog.csdn.net/hello_sheep/article/details/76474591)
+
+#### projects
+
+- [5个大数据实战项目](http://blog.csdn.net/lo3656485/article/details/39229557)
+
+- [Kafka + Flume + Spark Streaming](http://blog.csdn.net/Trigl/article/details/70237981)
