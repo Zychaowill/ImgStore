@@ -22,4 +22,4 @@
 
 ## 实时推荐系统
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/屏幕快照%202017-11-03%20下午8.19.49.png)
