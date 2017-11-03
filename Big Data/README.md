@@ -14,6 +14,8 @@
 
 - [Kafka](https://crossoverjie.top/2017/10/20/SSM17/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 
+- [MQ](http://blog.csdn.net/kf3035/article/details/74454364)
+
 - [Hadoop perfect resources](http://www.cnblogs.com/edisonchou/p/4470682.html)
 
 - [大数据用户画像方法与实现](http://www.cnblogs.com/cescyang/p/6017608.html)
