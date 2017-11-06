@@ -54,6 +54,8 @@
 
 - [Flume + Kafka + Storm + Redis实时分析系统架构](http://blog.csdn.net/ymh198816/article/details/51998085)
 
+- [基于Hadoop的数据仓库](https://github.com/Zychaowill/ImgStore/blob/master/Big%20Data/Hadoop.md)
+
 - [Spark推荐系统](https://github.com/Zychaowill/ImgStore/blob/master/Big%20Data/Spark.md)
 
 #### technology stack
