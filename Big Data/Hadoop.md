@@ -100,7 +100,7 @@
 
 ### 3.2 ETL
 
-![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/Step2.bmp)
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/Step2new.bmp)
 
 - ETL
 	- Extract, Transform, Load
