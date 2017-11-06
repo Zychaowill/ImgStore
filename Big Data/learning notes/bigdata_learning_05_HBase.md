@@ -442,15 +442,15 @@ e g:
 	
 #### 7.5.1 表tsdb-uid设计
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HBase/tsdb-uid%E8%AE%BE%E8%AE%A1.bmp)
 
 #### 7.5.2 表tsdb设计
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HBase/tsdb%E8%AE%BE%E8%AE%A1.bmp)
 
 #### 7.5.3 OpenTSDB架构
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HBase/OpenTSDB%E6%9E%B6%E6%9E%84.bmp)
 
 - Server: OpenTSDB的agent，通过Collector收集数据，推送数据
 
