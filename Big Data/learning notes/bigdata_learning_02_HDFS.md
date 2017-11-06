@@ -154,3 +154,65 @@
 - 在新节点上
 	- 解压安装包
 	- 启动DN: hadoop-deamon.sh start datanode
+	
+## HDFS程序设计方法
+
+### HDFS Shell命令
+
+#### 文件操作命令
+
+![]()
+
+- 将本地文件上传到HDFS上
+	- bin/hdfs dfs -copyFromLocal /local/data /hdfs/data
+	- bin/hdfs dfs -put /local/data /hdfs/data
+	
+- 删除文件/目录
+	- bin/hdfs dfs -rmr /hdfs/data
+	
+- 创建目录
+	- bin/hdfs dfs -mkdir /hdfs/data
+	
+#### 管理命令
+
+![]()
+
+#### 管理脚本
+
+- 在sbin目录下
+	- start-all.sh
+	- start-dfs.sh
+	- start-yarn.sh
+	- hadoop-deamon(s).sh
+	
+- 单独启动某个服务
+	- hadoop-deamon.sh start namenode
+	- hadoop-deamon.sh start datanode
+	
+#### You know?
+
+- bin/hdfs和bin/hadoop区别（一样的，建议使用hdfs，hadoop是很早引入的）
+	- bin/hdfs dfs -ls /tmp
+	- bin/hadoop dfs -ls /tmp
+	
+- 不同目录表示的却别
+	- bin/hdfs dfs -ls /tmp
+	- bin/hdfs dfs -ls file:///tmp
+	- bin/hdsf dfs -ls hdfs://master:9000/tmp
+	
+- 查看文件或目录的数据块存放位置
+	- hdfs fsck /test/data -locations -blocks -racks -files
+	
+### HDFS WEB UI使用
+
+- 打开HDFS WEB UI
+	- Host:port, port为50070
+	
+- 观察WEB UI中的信息
+	- DataNode个数
+	- 总的文件数目，block数目
+	- HDFS版本信息
+	
+## Reference Link
+
+- ![HDFS存储原理分析](http://www.cnblogs.com/raphael5200/p/5497218.html)

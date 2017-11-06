@@ -18,6 +18,8 @@
 
 - [Big Data & Scala](http://blog.csdn.net/sinat_31726559/article/details/51901832)
 
+- [HDFS存储原理分析](http://www.cnblogs.com/raphael5200/category/782314.html)
+
 - [Kafka](https://crossoverjie.top/2017/10/20/SSM17/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 
 - [MQ](http://blog.csdn.net/kf3035/article/details/74454364)
