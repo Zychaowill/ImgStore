@@ -50,3 +50,54 @@
 	
 ## HDFS基础架构与原理
 
+### 分布式文件系统的一种实现方式
+
+![]()
+
+### HDFS设计思想
+
+![]()
+
+### HDFS架构
+
+![]()
+
+- Active NameNode
+	- 主Master（只有一个）
+	- 管理HDFS的名称空间
+	- 管理数据块映射信息
+	- 配置副本策略
+	- 处理客户端读写请求
+
+- Standby NameNode
+	- NameNode的热备
+	- 定期合并fsimage和fsedits,推送给NameNode
+	- 当Active NameNode出现故障时，快速切换为新的Active NameNode
+	
+- DataNode
+	- Slave（有多个）
+	- 存储实际的数据块
+	- 执行数据块读/写
+
+- Client
+	- 文件切分
+	- 与NameNode交互，获取文件位置信息
+	- 与DataNode交互，读取或者写入数据
+	- 管理HDFS
+	- 访问HDFS
+	
+### HA与Federation
+
+![]()
+
+### 准备NameNode数据同步
+
+![]()
+
+### HDFS数据块（block）
+
+- 文件被切分成固定大小的数据块
+
+- 为何数据块如此之大
+
+- 一个文件存储方式
