@@ -38,10 +38,9 @@
 
 ## 大数据技术框架
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF%E6%A1%86%E6%9E%B6.bmp)
 
 ## Hadoop生态系统
-
 ### Hadoop特点
 
 - 源代码开源（免费）
@@ -54,9 +53,9 @@
 
 ### hadoop生态系统
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/Hadoop%E7%94%9F%E6%80%81%E7%B3%BB%E7%BB%9F.bmp)
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/Hadoop%E7%94%9F%E6%80%81%E7%B3%BB%E7%BB%9F2.bmp)
 
 ### Hadoop构成:Flume（非结构化数据收集）
 
@@ -64,17 +63,13 @@
 
 - 用于非结构化数据收集
 
-#### Flume特点
+- Flume特点
+	- 分布式
+	- 高可靠性
+	- 高容错性
+	- 易于定制与扩展
 
-- 分布式
-
-- 高可靠性
-
-- 高容错性
-
-- 易于定制与扩展
-
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/Flume.bmp)
 
 ### Hadoop构成:Sqoop（结构化数据收集）
 
@@ -107,3 +102,15 @@
 - 应用场景
 	- 海量数据的可靠性存储
 	- 数据归档
+	
+### Hadoop构成:YARN（资源管理器）
+
+- YARN是什么
+	- Hadoop 2.0新增系统
+	- 负责集群的资源管理和调度
+	- 使得多种计算框架可以运行在一个集群中
+	
+- YARN的特点
+	- 良好的扩展性、高可用性
+	- 对多种类型的应用程序进行统一管理和调度
+	- 自带了多种多用户调度器，适合共享集群环境
