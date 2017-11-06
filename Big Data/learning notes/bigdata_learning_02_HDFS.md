@@ -189,7 +189,7 @@
 	- hadoop-deamon.sh start namenode
 	- hadoop-deamon.sh start datanode
 	
-#### You know?
+#### Do you know?
 
 - bin/hdfs和bin/hadoop区别（一样的，建议使用hdfs，hadoop是很早引入的）
 	- bin/hdfs dfs -ls /tmp
