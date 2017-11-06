@@ -416,6 +416,7 @@ e g:
 	timestamp: 1234567890
 	value: 0.42
 	tags: host=web42, pool=static
+```
 	
 ### 7.4 OpenTSDB可能的实现方案
 
