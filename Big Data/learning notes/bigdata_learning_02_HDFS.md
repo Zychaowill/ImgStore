@@ -132,3 +132,25 @@
 - 可靠性策略
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E5%8F%AF%E9%9D%A0%E6%80%A7%E7%AD%96%E7%95%A5.bmp)
+
+### HDFS不适合存储小文件
+
+- 元信息存储在NN内存中
+	- 一个节点的内存是有限的
+	
+- 存取大量小文件消耗大量的寻道时间
+	- 类比拷贝大量小文件与拷贝同等大小的一个大文件
+	
+- NN存储block数目是有限的
+	- 一个block元信息消耗大约150 byte内存
+	- 存储1亿个block，大约需要20GB内存
+	- 如果一个文件大小为10K，则一亿个文件大小仅为1TB（但要消耗掉NN 20GB内存）
+	
+### 如何动态增加新的DN？
+
+- 将其他DN上的hadoop安装包（里面的配置文件已经修改好了）拷贝到新节点相同目录下
+	- 确保配置文件是经过修改的，跟其他DN一致
+	
+- 在新节点上
+	- 解压安装包
+	- 启动DN: hadoop-deamon.sh start datanode
