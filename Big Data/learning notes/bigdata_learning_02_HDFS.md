@@ -52,15 +52,15 @@
 
 ### 分布式文件系统的一种实现方式
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E5%88%86%E5%B8%83%E5%BC%8F%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%80%E7%A7%8D%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F.bmp)
 
 ### HDFS设计思想
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HDFS%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3.bmp)
 
 ### HDFS架构
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HDFS%E6%9E%B6%E6%9E%84.bmp)
 
 - Active NameNode
 	- 主Master（只有一个）
@@ -88,11 +88,11 @@
 	
 ### HA与Federation
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HA_Federation.bmp)
 
 ### 准备NameNode数据同步
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E4%B8%BB%E5%A4%87NN%E6%95%B0%E6%8D%AE%E5%90%8C%E6%AD%A5.bmp)
 
 ### HDFS数据块（block）
 
@@ -109,26 +109,26 @@
 	
 ### 为什么选择三副本？
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9%E4%B8%89%E5%89%AF%E6%9C%AC.bmp)
 
 ### HDFS内部机制
 
 — 写流程
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HDFS%20Write.bmp)
 
 — 读流程
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HDFS%20Read.bmp)
 
 — 物理拓扑
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E7%89%A9%E7%90%86%E6%8B%93%E6%89%91.bmp)
 
 - 副本存放策略
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E5%89%AF%E6%9C%AC%E5%AD%98%E6%94%BE%E7%AD%96%E7%95%A5.bmp)
 
 - 可靠性策略
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E5%8F%AF%E9%9D%A0%E6%80%A7%E7%AD%96%E7%95%A5.bmp)
