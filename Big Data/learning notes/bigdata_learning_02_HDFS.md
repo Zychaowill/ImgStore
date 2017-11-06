@@ -125,11 +125,11 @@
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E7%89%A9%E7%90%86%E6%8B%93%E6%89%91.bmp)
 
-- 副本存放策略
+— 副本存放策略
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E5%89%AF%E6%9C%AC%E5%AD%98%E6%94%BE%E7%AD%96%E7%95%A5.bmp)
 
-- 可靠性策略
+— 可靠性策略
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E5%8F%AF%E9%9D%A0%E6%80%A7%E7%AD%96%E7%95%A5.bmp)
 
