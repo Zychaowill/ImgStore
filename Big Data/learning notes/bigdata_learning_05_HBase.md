@@ -25,7 +25,7 @@
 	
 ## 1 HBase概述
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HBase/HBase%E6%A6%82%E8%BF%B0.bmp)
 
 - HBase是一个构建在HDFS上的分布式列存储系统
 - HBase是Apache Hadoop生态系统中的重要一员，主要用于海量结构化数据存储
@@ -62,7 +62,7 @@
 
 - A small example
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HBase/A%20small%20example.bmp)
 
 - 行键与表
 	- 行键
@@ -87,7 +87,7 @@
 		
 - 列（族）式存储
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HBase/%E5%88%97%E6%97%8F%E5%BC%8F%E5%AD%98%E5%82%A8.bmp)
 
 ## 3 HBase物理模型
 
@@ -106,21 +106,21 @@
 		- Timestamp
 		- Value
 		
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HBase/%E7%89%A9%E7%90%86%E5%AD%98%E5%82%A8.bmp)
 
 > Table中的所有行都按照row key的字典序排列
 
 > Table在行的方向上分割为多个Region
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HBase/%E6%8C%89%E7%85%A7RowKey%E5%AD%97%E5%85%B8%E5%BA%8F%E6%8E%92%E5%88%97.bmp)
 
 > Region按大小分割的，每个表开始只有一个Region，随着数据增多，Region不断增大，当增大到一个阀值的时候，Region就会等分为两个新的Region，之后会有越来越多的Region
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HBase/Region%E5%88%86%E5%89%B2.bmp)
 
 > Region是HBase中分布式存储和负载均衡的最小单元，不同Region分布在不同RegionServer上
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HBase/Region%E5%88%86%E5%B8%83%E5%9C%A8%E4%B8%8D%E5%90%8CRegionServer.bmp)
 
 > Region虽然是分布式存储的最小单元，但并不是存储的最小单元。
 
@@ -130,11 +130,11 @@
 
 > MemStore存储在内存中，StoreFile存储在HDFS上
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HBase/Store.bmp)
 
 ## 4 HBase架构
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HBase/HBase%E6%9E%B6%E6%9E%84.bmp)
 
 ### 4.1 HRegion（区域）
 
@@ -162,7 +162,7 @@
 
 - 一个HRegionServer上面有多个HRegion，一个HRegion也只会被一个HRegionServer维护
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HBase/HRegionServer.bmp)
 
 - HRegionServer主要负责响应用户I/O请求，从HDFS读写数据，是HBase中最核心的模块
 
@@ -208,7 +208,7 @@
 
 #### 4.5.1 安装部署HBase
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HBase/%E9%83%A8%E7%BD%B2HBase.bmp)
 
 - 部署要点
 	- HDFS
@@ -225,5 +225,20 @@
 
 	
 ## 5 HBase Shell
+
+### 5.1 HBase访问方式
+
+- Native Java API
+	- 最常规和高效的访问方式
+	
+- HBase Shell
+	- HBase的命令行工具，最简单的接口，适合HBase管理使用
+
+- Thrift Gateway
+	- 利用Thrift序列化技术，支持C++, PHP, Python等多种语言，适合其他异构系统在线访问HBase表数据
+
+- MapReduce
+	- 直接使用MR作业处理HBase数据
+	- 使用Pig/Hive处理HBase数据
 
 ## 6 实践与企业案例
