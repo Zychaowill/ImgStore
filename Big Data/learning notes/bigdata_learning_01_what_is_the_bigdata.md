@@ -232,3 +232,41 @@
 - Hadoop版本衍化及其版本选择
 
 - 大数据挑战
+
+### 补充
+
+#### 大数据技术栈
+	
+- Centos 7
+
+- Java 1.8
+
+- Scala 2.11.x(不能是2.10或2.12)
+
+- Bash Shell
+
+- Hadoop 2.7.3
+
+- Hive 2.1.1
+
+- HBase 1.2.4
+
+- Flume 1.7.0
+
+- Sqoop 1.99.7
+
+- Presto 0.166
+
+- Spark 2.1.0
+
+- Kafka 0.9.0
+
+- Zookeeper 3.4.9
+
+#### 集成开发环境
+
+- IntelliJ IDEA
+
+#### 项目构建（包管理、编译、发布）
+
+- Maven
