@@ -215,4 +215,4 @@
 	
 ## Reference Link
 
-- ![HDFS存储原理分析](http://www.cnblogs.com/raphael5200/p/5497218.html)
+- [HDFS存储原理分析](http://www.cnblogs.com/raphael5200/p/5497218.html)
