@@ -152,7 +152,7 @@
 
 - 压缩算法
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95.bmp)
 
 - 查询
 ``` SELECT domain_id, sum(log_type) FROM logs WHERE log_time>'2016-01-12-06' GROUP BY domain_id;  ```
