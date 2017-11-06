@@ -213,6 +213,38 @@
 	- 总的文件数目，block数目
 	- HDFS版本信息
 	
+	
+## HDFS源码阅读
+
+- Why to read?
+	- 更加细致地的了解系统，可以更好的使用和维护系统
+	- 解决使用过程中的问题
+		- 修复Bug
+		- 优化性能
+		- 开发新功能
+	- 学习系统中的设计和优点
+
+- How to read?
+	- 掌握架构，功能和原理
+	- 梳理组件间的联系
+	- 理清每个组件中的内部模块
+	- 最好是带着问题去阅读
+
+- HDFS组件间通信
+	- Client和NN之间是通过RPC通信
+		- ClientProtocol
+	- DN和NN之间是通过RPC通信
+		- DatanodeProtocol
+	- Client和DN之间是通过Socket传入数据，通过RPC发送命令
+		- ClientDatanodeProtocol
+	- DataNode之间是通过Socket传入数据，通过RPC发送命令
+		- InterDatanodeProtocol
+
+- Where to read?
+	- 导入HDFS工程到Intellij
+	- 查看HDFS代码结构
+	- 分析HDFS源码
+
 ## Reference Link
 
 - [HDFS存储原理分析](http://www.cnblogs.com/raphael5200/p/5497218.html)
