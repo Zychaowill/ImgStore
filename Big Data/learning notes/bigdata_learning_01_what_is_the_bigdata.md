@@ -114,3 +114,18 @@
 	- 良好的扩展性、高可用性
 	- 对多种类型的应用程序进行统一管理和调度
 	- 自带了多种多用户调度器，适合共享集群环境
+	
+![]()
+
+![]()
+
+### Hadoop构成:MapReduce（分布式计算框架）
+
+- 源自于Google的MapReduce论文
+	- 发表于2004年12月
+	- Hadoop MapReduce是Google MapReduce克隆版
+	
+- MapReduce特点
+	- 良好的扩展性
+	- 高容错性
+	- 适合PB级以上海量数据的离线处理
