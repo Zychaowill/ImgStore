@@ -217,11 +217,12 @@
 	- RegionServer
 	
 - HBase Master界面
+
 ``` http://master:60010 ```	
 
 - HBase HRegionServer界面
-``` http://master:60030 ```
 
+``` http://master:60030 ```
 
 	
 ## 5 HBase Shell
@@ -241,4 +242,138 @@
 	- 直接使用MR作业处理HBase数据
 	- 使用Pig/Hive处理HBase数据
 
-## 6 实践与企业案例
+### 5.2 HBase Shell
+
+- 运行以下命令来启动HBase Shell（在此之前，保证Hadoop集群已经启动）
+
+``` ./bin/hbase shell ```
+
+- 建表: 表名scores, 有两个列族: 'grade'和'course'
+
+``` create 'scores', 'grade', 'course' ```
+
+- 查看HBase中的表
+
+``` list ```
+
+- 查看表结构
+
+``` desc 'scores' ```
+
+- put: 写入数据
+	- 格式: ``` >put 't1', 'r1', 'c1', 'value', ts1 ```
+		- t1: 表名
+		- r1: 行键
+		- c1: 列名
+		- value: 值
+		- ts1: 时间戳
+
+``` 
+	>put 'scores', 'Tom', 'grade', 5
+	>put 'scores', 'Tom', 'course:math', 97
+	>put 'scores', 'Tom', 'course:art', 87
+	>put 'scores', 'Jim', 'grade', 4
+	>put 'scores', 'Jim', 'course:match', 68
+	>put 'scores', 'Jim', 'course:science', 89
+```
+
+- get: 随机查找数据
+	- 格式
+		
+		```
+			>get 't1', 'r1'
+			>get 't1', 'r1', 'c1'
+			>get 't1', 'r1', 'c1', 'c2'
+			>get 't1', 'r1', {COLUMN=>'c1',TIMESTAMP=>ts1}
+			>get 't1', 'r1', {COLUMN=>'c1',TIMESTAMP=>[ts1, ts2],VERSIONs=>4}
+		```
+
+```
+	>get 'scores', 'Tom'
+	>get 'scores', 'Tom', 'grade'
+	>get 'scores', 'Tom', 'grade', 'course'
+```
+	
+- scan: 范围查找数据
+	- 格式
+	
+		```
+			>scan 't1'
+			>scan 't1', {COLUMNS=>'course:math'}
+			>scan 't1', {COLUMNS=>['c1', 'c2'],LIMIT=>10,STARTROW=>'xyz'}
+			>scan 't1', {REVERSED=>true}
+		```
+		
+```
+	>scan 'scores'
+	>scan 'scores', {COLUMNS=>'course:math'}
+	>scan 'scores', {COLUMNS=>'course'}
+	>scan 'scores', {COLUMNS=>'course',LIMIT=>1,STARTROW=>'Jim'}
+```
+	
+- delete: 删除数据
+	- 格式
+		
+		```
+			>delete 't1', 'r1', 'c1', ts1
+		```
+		
+```
+	>delete 'scores', 'Jim', 'course:math'
+```		
+	
+- truncate: 删除全表数据
+
+```
+	>truncate 'scores'
+```	
+	
+- alter: 修改表结构
+	- 为scores表增加一个family列族，名为profile
+	``` >alter 'scores', NAME=>'profile' ```	
+	- 删除profile列族
+	``` >alter 'scores', NAME=>'profile', METHOD=>'delete' ```
+
+- 删除表的步骤
+	- disabled 't1'
+	- drop 't1'
+	
+```
+	>disabled 'scores'
+	>drop 'scores'
+```
+	
+## 6 HBase Java API
+
+- HBase使用Java语言编写的，支持Java编程是自然而然的事情
+
+- 支持CRUD操作
+	- Create
+	- Read
+	- Update
+	- Delete
+	
+- Java API包含HBase Shell支持的所有功能，甚至更多
+
+- Java API是访问HBase最快的方式
+
+### 6.1 Java API程序设计步骤
+
+- 1.创建一个Configuration对象
+	- 包含各种配置信息
+	
+- 2.构建一个Connection连接
+	- 提供Configuration对象
+
+- 3.根据不同的功能来获得相应的角色
+	- 管理: Admin
+	- 访问数据: Table
+
+- 4.执行相应的操作
+	- 执行put、get、delete、scan等操作
+	
+- 5.关闭连接句柄
+	- 释放各种资源
+
+## 7 实践与企业案例
+
