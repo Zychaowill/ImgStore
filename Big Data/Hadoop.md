@@ -114,6 +114,7 @@
 > 如何创建带压缩的ORC表
 
 - ETL后日志格式（文本格式）如下:
+
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/ETL%E5%90%8E%E6%97%A5%E5%BF%97%E6%A0%BC%E5%BC%8F.bmp)	
 	
 - 临时表（文本格式）定义如下:
