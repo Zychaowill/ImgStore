@@ -1,8 +1,8 @@
 # What's the big data
 
-## 大数据应用领域
+## 1 大数据应用领域
 
-### 互联网领域
+### 1.1 互联网领域
 
 - 搜索引擎
 
@@ -10,38 +10,38 @@
 
 - 广告系统
 
-### 电信领域
+### 1.2 电信领域
 
 - 用户画像
 
 - 用户行为分析
 
-### 医药生物领域
+### 1.3 医药生物领域
 
 - DNA分析
 
-### 视频领域
+### 1.4 视频领域
 
 - 视频存储
 
 - 视频分析
 
-### 金融领域
+### 1.5 金融领域
 
 - 信用卡欺诈分析
 
 - 用户分析
 
-### 矿产勘探领域
+### 1.6 矿产勘探领域
 
 - 矿产石油勘查预测
 
-## 大数据技术框架
+## 2 大数据技术框架
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF%E6%A1%86%E6%9E%B6.bmp)
 
-## Hadoop生态系统
-### Hadoop特点
+## 3 Hadoop生态系统
+### 3.1 Hadoop特点
 
 - 源代码开源（免费）
 
@@ -51,13 +51,13 @@
 
 - 已得到企业界验证
 
-### hadoop生态系统
+### 3.2 hadoop生态系统
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/Hadoop%E7%94%9F%E6%80%81%E7%B3%BB%E7%BB%9F.bmp)
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/Hadoop%E7%94%9F%E6%80%81%E7%B3%BB%E7%BB%9F2.bmp)
 
-### Hadoop构成:Flume（非结构化数据收集）
+### 3.3 Hadoop构成:Flume（非结构化数据收集）
 
 - Cloudera开源的日志收集系统
 
@@ -71,7 +71,7 @@
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/Flume.bmp)
 
-### Hadoop构成:Sqoop（结构化数据收集）
+### 3.4 Hadoop构成:Sqoop（结构化数据收集）
 
 - Sqoop: SQL-to-Hadoop
 
@@ -83,7 +83,7 @@
 
 - 批处理方式进行数据传输
 
-### Hadoop的构成:HDFS(分布式文件系统)
+### 3.5 Hadoop的构成:HDFS(分布式文件系统)
 
 - 源自于Google的GFS论文
 	- 发表于2003年10月
@@ -103,7 +103,7 @@
 	- 海量数据的可靠性存储
 	- 数据归档
 	
-### Hadoop构成:YARN（资源管理器）
+### 3.6 Hadoop构成:YARN（资源管理器）
 
 - YARN是什么
 	- Hadoop 2.0新增系统
@@ -119,7 +119,7 @@
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/YARN2.bmp)
 
-### Hadoop构成:MapReduce（分布式计算框架）
+### 3.7 Hadoop构成:MapReduce（分布式计算框架）
 
 - 源自于Google的MapReduce论文
 	- 发表于2004年12月
@@ -132,7 +132,7 @@
 	
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/MR.bmp)
 
-### Hadoop构成:Hive（基于MR的数据仓库）
+### 3.8 Hadoop构成:Hive（基于MR的数据仓库）
 
 - 由Facebook开源，最初用于解决海量结构化的日志数据统计问题:
 	- ETL(Extraction-Transformation-Loading)工具
@@ -158,15 +158,15 @@
 	- 海量结构化数据离线分析
 	- 低成本进行数据分析（不直接编写MR）
 	
-## Spark生态系统
+## 4 Spark生态系统
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/Spark.bmp)
 
-### Hadoop版本衍化:Apache Hadoop
+### 4.1 Hadoop版本衍化:Apache Hadoop
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/Hadoop%E7%89%88%E6%9C%AC%E8%A1%8D%E5%8C%96.bmp)
 
-### Hadoop版本选择
+### 4.2 Hadoop版本选择
 
 - 不同发行版兼容性
 	- 架构、部署和使用方法一致，不同之处仅在若干内部实现
@@ -176,7 +176,7 @@
 	- 更易维护和升级
 	- 经过集成测试，不会面临版本兼容问题
 	
-### Hadoop集群搭建
+### 4.3 Hadoop集群搭建
 
 - 全人工搭建
 
@@ -184,7 +184,7 @@
 	- Cloudera Manager
 	- Ambari
 	
-#### Hadoop全人工模式安装:常见错误
+#### 4.3.1 Hadoop全人工模式安装:常见错误
 
 - 防火墙未关闭（所有节点都要关闭）
 	- Connection Refused
@@ -196,7 +196,7 @@
 	- 每次格式化后，均会导致HDFS启动失败，解决方案：清空HDFS的各个数据目录，然后重启HDFS
 	- 格式化HDFS是非常危险的，会导致所有数据丢失！
 	
-### Hadoop运行模式
+### 4.4 Hadoop运行模式
 
 - 本地模式
 	- 一个节点，不会启动任何服务
@@ -207,7 +207,7 @@
 - 分布式模式
 	- 多于一个节点
 	
-## 大数据挑战
+## 5 大数据挑战
 
 - 机器数目多
 	- 从几百个，到上千个甚至上万
@@ -223,7 +223,7 @@
 - 定位问题困难
 	- 问题来源可能是，硬件，操作系统，大数据系统等
 	
-## Summary
+## 6 Summary
 
 - 大数据技术体系
 
@@ -233,7 +233,7 @@
 
 - 大数据挑战
 
-### 补充
+## 补充
 
 #### 大数据技术栈
 	

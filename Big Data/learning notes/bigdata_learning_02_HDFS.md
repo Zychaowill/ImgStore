@@ -1,6 +1,6 @@
 # 分布式文件系统HDFS
 
-## HDFS是什么？
+## 1 HDFS是什么？
 
 - 源自于Google的GFS论文
 	- 发表于2003年10月
@@ -11,7 +11,7 @@
 	- 运行于大量普通廉价机器上，提供容错机制
 	- 为大量用户提供性能不错的文件存取服务
 	
-## HDFS优点
+## 2 HDFS优点
 
 - 高容错性
 	- 数据自动保存多个复本
@@ -34,7 +34,7 @@
 	- 通过多副本提高可靠性
 	- 提供了容错和恢复机制
 	
-### HDFS缺点
+### 2.1 HDFS缺点
 
 - 低延迟数据访问
 	- 不如毫秒级
@@ -48,17 +48,17 @@
 	- 一个文件只能有一个写者
 	- 仅支持append
 	
-## HDFS基础架构与原理
+## 3 HDFS基础架构与原理
 
-### 分布式文件系统的一种实现方式
+### 3.1 分布式文件系统的一种实现方式
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E5%88%86%E5%B8%83%E5%BC%8F%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%80%E7%A7%8D%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F.bmp)
 
-### HDFS设计思想
+### 3.2 HDFS设计思想
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HDFS%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3.bmp)
 
-### HDFS架构
+### 3.3 HDFS架构
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HDFS%E6%9E%B6%E6%9E%84.bmp)
 
@@ -86,15 +86,15 @@
 	- 管理HDFS
 	- 访问HDFS
 	
-### HA与Federation
+### 3.4 HA与Federation
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HA_Federation.bmp)
 
-### 准备NameNode数据同步
+### 3.5 准备NameNode数据同步
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E4%B8%BB%E5%A4%87NN%E6%95%B0%E6%8D%AE%E5%90%8C%E6%AD%A5.bmp)
 
-### HDFS数据块（block）
+### 3.6 HDFS数据块（block）
 
 - 文件被切分成固定大小的数据块
 	- 默认数据块大小为128MB，可配置
@@ -107,11 +107,11 @@
 	- 按大小被切分成若干个block，存储到不同节点上
 	- 默认情况下每个block有三个副本
 	
-### 为什么选择三副本？
+### 3.7 为什么选择三副本？
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9%E4%B8%89%E5%89%AF%E6%9C%AC.bmp)
 
-### HDFS内部机制
+### 3.8 HDFS内部机制
 
 - 写流程
 
@@ -133,7 +133,7 @@
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E5%8F%AF%E9%9D%A0%E6%80%A7%E7%AD%96%E7%95%A5.bmp)
 
-### HDFS不适合存储小文件
+### 3.9 HDFS不适合存储小文件
 
 - 元信息存储在NN内存中
 	- 一个节点的内存是有限的
@@ -146,7 +146,7 @@
 	- 存储1亿个block，大约需要20GB内存
 	- 如果一个文件大小为10K，则一亿个文件大小仅为1TB（但要消耗掉NN 20GB内存）
 	
-### 如何动态增加新的DN？
+### 3.10 如何动态增加新的DN？
 
 - 将其他DN上的hadoop安装包（里面的配置文件已经修改好了）拷贝到新节点相同目录下
 	- 确保配置文件是经过修改的，跟其他DN一致
@@ -155,11 +155,11 @@
 	- 解压安装包
 	- 启动DN: hadoop-deamon.sh start datanode
 	
-## HDFS程序设计方法
+## 4 HDFS程序设计方法
 
-### HDFS Shell命令
+### 4.1 HDFS Shell命令
 
-#### 文件操作命令
+#### 4.1.1 文件操作命令
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HDFS%20Shell.bmp)
 
@@ -173,11 +173,11 @@
 - 创建目录
 	- bin/hdfs dfs -mkdir /hdfs/data
 	
-#### 管理命令
+#### 4.1.2 管理命令
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HDFS%20Shell%202.bmp)
 
-#### 管理脚本
+#### 4.1.3 管理脚本
 
 - 在sbin目录下
 	- start-all.sh
@@ -189,7 +189,7 @@
 	- hadoop-deamon.sh start namenode
 	- hadoop-deamon.sh start datanode
 	
-#### Do you know?
+#### 4.1.4 Do you know?
 
 - bin/hdfs和bin/hadoop区别（一样的，建议使用hdfs，hadoop是很早引入的）
 	- bin/hdfs dfs -ls /tmp
@@ -203,7 +203,7 @@
 - 查看文件或目录的数据块存放位置
 	- hdfs fsck /test/data -locations -blocks -racks -files
 	
-### HDFS WEB UI使用
+### 4.2 HDFS WEB UI使用
 
 - 打开HDFS WEB UI
 	- Host:port, port为50070
