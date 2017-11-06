@@ -161,7 +161,7 @@
 
 #### 文件操作命令
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HDFS%20Shell.bmp)
 
 - 将本地文件上传到HDFS上
 	- bin/hdfs dfs -copyFromLocal /local/data /hdfs/data
@@ -175,7 +175,7 @@
 	
 #### 管理命令
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HDFS%20Shell%202.bmp)
 
 #### 管理脚本
 
