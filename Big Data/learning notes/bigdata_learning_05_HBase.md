@@ -416,4 +416,83 @@ e g:
 	timestamp: 1234567890
 	value: 0.42
 	tags: host=web42, pool=static
-```
+	
+### 7.4 OpenTSDB可能的实现方案
+
+- 简单的实现方案
+	- rowKey=metric|timestamp|host=web42|pool=static
+	- Column=v
+	- Value=0.42
+	
+- 存在问题
+	- rowKey太长，占用大量存储资源，且为字符串类型，查找开销大
+	- 不易获得某个时间区间的所有值
+	
+### 7.5 OpenTSDB实现方案
+
+- 使用HBase存储，核心的存储，使用两张表，tsdb和tsdb-uid
+
+- tsdb-uid保存元数据信息，即编码信息
+	- metric—>3字节整数、tagk—>3字节整数、tagv—>3字节整数
+	- proc.loadavg.1m—>052、host—>001、web42—>028、pool—>047、static—>001
+	
+- tsdb保存实际数据
+	- Rowkey: 跟前一种方案类似，但是做了编码
+	- Row: 每行存储一个小时的数据，列名是秒偏移量，列值是metric值
+	
+#### 7.5.1 表tsdb-uid设计
+
+![]()
+
+#### 7.5.2 表tsdb设计
+
+![]()
+
+#### 7.5.3 OpenTSDB架构
+
+![]()
+
+- Server: OpenTSDB的agent，通过Collector收集数据，推送数据
+
+- TSD: 是对外通信的无状态的服务器，对数据进行汇总和存取
+
+- HBase: TSD收到数据后，通过异步客户端AsyncHbase将数据写入到HBase
+
+### 7.6 HBase在淘宝的应用:历史订单查询
+
+- 历史账单
+	- 查询方式简单: 列出用户给定时间段内的消费记录
+	- 三个月内的账单: 查询频繁，数据量较小
+	- 三个月前的账单: 查询频率低，数据量大
+	
+- 解决方案
+	- 三个月内的账单数据: 放到MySQL中
+	- 三个月前的账单数据: 放到HBase中
+		- 行键设计: userid + time + id
+		- 列: 购物的明细，包括商品名、商品描述，价格等
+
+### 7.7 HBase在搜索引擎中的引用:网络爬虫
+
+> 爬虫程序爬去的是整个互联网上的所有或特定主题的数据，这个数据量一般是PB级，因此用使用分布式的爬去设计和分布式存储是架构设计的不二选择，基于Hadoop的HBase可以实现数据存储的目的。
+
+- HBase作用
+	- 存储爬取网页的历史信息，包括URL、爬取时间、优先级等
+	- 网页去重
+	- 网页信息的实时更新
+	
+- HBase表设计
+	- Row Key值: URL
+	- 列: 爬虫抓取到的信息都可以存放在同一列族info中，主要的字段有:
+		- oriUrl: 原始URL值，主机部分是域名
+		- statusCode: 访问URL时的返回的状态码
+		- linkNum: 该链接被其他链接引用的次数
+		- type: 页面类型
+		- Title: 页面标题
+		- Length: 页面大小
+		- Lastmodified: 最后修改时间
+
+## Reference Link
+
+- [HBase存储格式](http://www.oschina.net/p/hbase/?fromerr=aeo6LzCq)
+
+- [HBase在淘宝的应用和优化小结](http://blog.nosqlfan.com/html/3694.html)
