@@ -39,7 +39,7 @@
 	
 ### 2.1 基于Hadoop的数据仓库:第一版
 
-![]()		
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E5%9F%BA%E4%BA%8EHadoop%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%931.bmp)		
 
 - 优点
 	- 满足了数据仓库的基本要求
@@ -51,7 +51,7 @@
 	
 ### 2.2 基于Hadoop的数据仓库:第二版
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E5%9F%BA%E4%BA%8EHadoop%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%932.bmp)
 
 - 改进
 	- 使用MPP(Presto)系统提高查询性能
@@ -67,7 +67,7 @@
 	
 ### 2.3 基于Hadoop的数据仓库:第三版（增加实时pipeline）
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E5%9F%BA%E4%BA%8EHadoop%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%933.bmp)
 
 - 改进
 	- 使用Spark Streaming系统降低数据延迟
@@ -96,11 +96,11 @@
 	
 ### 3.1 收集数据
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/Step1.bmp)
 
 ### 3.2 ETL
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/Step2.bmp)
 
 - ETL
 	- Extract, Transform, Load
@@ -109,14 +109,15 @@
 	
 - 行存储与列存储
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/%E8%A1%8C%E5%BC%8F%E5%AD%98%E5%82%A8%E4%B8%8E%E5%88%97%E5%BC%8F%E5%AD%98%E5%82%A8.bmp)
 
 > 如何创建带压缩的ORC表
 
 - ETL后日志格式（文本格式）如下:
-	![]()	
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/ETL%E5%90%8E%E6%97%A5%E5%BF%97%E6%A0%BC%E5%BC%8F.bmp)	
+	
 - 临时表（文本格式）定义如下:
-```sql 	
+``` 	
 	CREATE EXTERNAL TABLE tmp_logs (
 		domain_id INT,
 		log_time STRING,
@@ -131,22 +132,23 @@
 ```
 	
 - 将数据导入临时表tmp_logs:
-	``` LOAD DATA INPATH '/nginx/logs/2016011206' OVERWRITE INTO TABLE tmp_logs; ```
+``` LOAD DATA INPATH '/nginx/logs/2016011206' OVERWRITE INTO TABLE tmp_logs; ```
+
 - 将临时表中数据导入到orc格式的表中:
-	``` 
-		CREATE TABLE logs (
-			domain_id INT,
-			log_time STRING,
-			log_date STRING,
-			log_type INT,
-			uin BIGINT
-		)
-		PARTITION BY(log_time STRING)
-		STORED AS ORC
-		tblproperties("orc.compress"="SNAPPY");
-		
-		INSERT INTO TABLE logs PARTITION(dt='2016-01-12-06') SELECT * FROM tmp_logs;
-	 ```
+``` 
+	CREATE TABLE logs (
+		domain_id INT,
+		log_time STRING,
+		log_date STRING,
+		log_type INT,
+		uin BIGINT
+	)
+	PARTITION BY(log_time STRING)
+	STORED AS ORC
+	tblproperties("orc.compress"="SNAPPY");
+	
+	INSERT INTO TABLE logs PARTITION(dt='2016-01-12-06') SELECT * FROM tmp_logs;
+ ```
 
 - 压缩算法
 
@@ -157,7 +159,7 @@
 	
 ### 3.3 参数化报表与可视化
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/Step3.bmp)
 
 - 参数化报表
 	- 根据用户定制的数据要求，生成SQL
