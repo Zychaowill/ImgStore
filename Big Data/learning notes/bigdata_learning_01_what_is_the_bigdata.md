@@ -115,9 +115,9 @@
 	- 对多种类型的应用程序进行统一管理和调度
 	- 自带了多种多用户调度器，适合共享集群环境
 	
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/YARN.bmp)
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/YARN2.bmp)
 
 ### Hadoop构成:MapReduce（分布式计算框架）
 
@@ -130,7 +130,7 @@
 	- 高容错性
 	- 适合PB级以上海量数据的离线处理
 	
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/MR.bmp)
 
 ### Hadoop构成:Hive（基于MR的数据仓库）
 
