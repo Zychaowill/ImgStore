@@ -93,7 +93,7 @@
 
 ### 3.1 概念模型
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/HBase/%E6%A6%82%E5%BF%B5%E6%A8%A1%E5%9E%8B.bmp)
 
 ### 3.2 物理模型
 
