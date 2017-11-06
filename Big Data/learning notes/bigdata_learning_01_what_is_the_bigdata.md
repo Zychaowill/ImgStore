@@ -164,7 +164,7 @@
 
 ### Hadoop版本衍化:Apache Hadoop
 
-![]()
+![](https://github.com/Zychaowill/ImgStore/blob/master/hadoop/Hadoop%E7%89%88%E6%9C%AC%E8%A1%8D%E5%8C%96.bmp)
 
 ### Hadoop版本选择
 
