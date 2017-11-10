@@ -39,3 +39,7 @@
 - [MLlib](https://github.com/Zychaowill/ImgStore/blob/master/Big%20Data/learning%20notes/bigdata_learning_14_MLlib.md)
 
 - [Spark知识总结和案例分析](https://github.com/Zychaowill/ImgStore/blob/master/Big%20Data/learning%20notes/bigdata_learning_15_Spark_summary.md)
+
+## Deep in learning
+
+- [mapreduce的执行流程以及shuffle过程](http://m.blog.csdn.net/u013234372/article/details/39779711)
