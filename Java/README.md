@@ -22,6 +22,8 @@
 
 - [Thrift](http://www.cnblogs.com/TingyunAPM/p/5719385.html)
 
+- [Thrift改造双向通信](http://joelpm.com/2009/04/03/thrift-bidirectional-async-rpc.html)
+
 - [Struct2回顾](http://blog.csdn.net/qq_34066220/article/details/76359461)
 
 #### experience summary
