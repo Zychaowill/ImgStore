@@ -26,6 +26,14 @@
 
 - [Struct2回顾](http://blog.csdn.net/qq_34066220/article/details/76359461)
 
+- [大话程序猿眼里的高并发（下）](http://www.importnew.com/22546.html)
+
+- [高并发下的九死一生，一不小心就掉入万丈深渊](http://www.importnew.com/23010.html)
+
+- [你真的很熟悉分布式和事务吗?](http://www.importnew.com/23010.html)
+
+- [如何使用Java机器学习](http://www.importnew.com/22663.html)
+
 #### experience summary
 
 - [those projects you can join](http://blog.csdn.net/xjmcsdn/article/details/52403618)
