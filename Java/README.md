@@ -32,6 +32,8 @@
 
 - [和代码的七年青春](http://blog.csdn.net/junzia/article/details/73060946)
 
+- [阿里面试回来，我想和Java程序员谈谈](http://www.importnew.com/22056.html)
+
 - [change the way of thinking in your programming](http://blog.csdn.net/feng19821209/article/details/147959)
 
 - [Java初级学习路线](http://blog.csdn.net/li_xiao_ming/article/details/52349992)
