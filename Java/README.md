@@ -34,6 +34,8 @@
 
 - [如何使用Java机器学习](http://www.importnew.com/22663.html)
 
+- [Java Paradise](http://www.cnblogs.com/zuoxiaolong/p/pattern26.html)
+
 #### experience summary
 
 - [those projects you can join](http://blog.csdn.net/xjmcsdn/article/details/52403618)
