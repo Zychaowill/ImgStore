@@ -6,6 +6,8 @@
 
 - [Redis实现分布式session功能的共享](http://blog.csdn.net/fengshizty/article/details/50578639)
 
+- [深入Redis主从高可用方案:哨兵机制核心原理](https://mp.weixin.qq.com/s?__biz=MzIzMDk2ODA2NQ==&mid=2247484245&idx=1&sn=5905ef3947a1dad4072b7115851c0c46&chksm=e8aa1d3bdfdd942d7c43a0662b0acc91cdad88514ee6334e01167885b43db138503ef8ecf7ff&mpshare=1&scene=1&srcid=1124FxBH9AgyPYp3m01l4oYM#rd)
+
 - [集群/分布式集群下5种session处理策略](http://blog.csdn.net/woaigaolaoshi/article/details/50902010)
 
 - [Spring Session解决分布式Session问题的实现原理](http://blog.csdn.net/xlgen157387/article/details/60321984)
