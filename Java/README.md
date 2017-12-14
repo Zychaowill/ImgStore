@@ -36,6 +36,10 @@
 
 - [Java Paradise](http://www.cnblogs.com/zuoxiaolong/p/pattern26.html)
 
+- [十个海量数据问题及其解决方案](http://blog.csdn.net/hitxueliang/article/details/52153476)
+
+- [十大海量数据处理及总结](http://blog.csdn.net/v_july_v/article/details/6279498/)
+
 #### experience summary
 
 - [those projects you can join](http://blog.csdn.net/xjmcsdn/article/details/52403618)
