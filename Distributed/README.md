@@ -16,6 +16,8 @@
 
 - [集中式系统和分布式系统](http://www.cnblogs.com/quchunhui/p/7691615.html)
 
+- [从银行转账失败到分布式事务:总结与思考](http://www.cnblogs.com/xybaby/p/7465816.html?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
+
 ##### Code
 
 - [分布式session分享tomcat-redis-session-manager-master](http://download.csdn.net/download/fengshizty/9417242)
