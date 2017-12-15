@@ -11,8 +11,8 @@
 - [Redis在京东到家的订单中的使用](https://juejin.im/entry/598c0700f265da3e2c70fa83)
 
 - [缓存更新的套路](https://coolshell.cn/articles/17416.html)
-	- [1](https://weibo.com/1401880315/E0mCVzY0Q?type=comment)
-	- [2](https://weibo.com/1401880315/E0NdXzA9C?type=comment#_rnd1513298499852)
+	- [before cache](https://weibo.com/1401880315/E0mCVzY0Q?type=comment)
+	- [cache](https://weibo.com/1401880315/E0NdXzA9C?type=comment#_rnd1513298499852)
 
 ![](https://github.com/Zychaowill/ImgStore/blob/master/Distributed/before%20cache.bmp)
 ![](https://github.com/Zychaowill/ImgStore/blob/master/Distributed/cache.bmp)
