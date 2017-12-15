@@ -13,3 +13,5 @@
 - [JPA Query 查询](http://blog.csdn.net/wantaway314/article/details/52872477)
 
 - [对JPA中Entity关系映射中 mappedBy 的理解](http://blog.csdn.net/petercnmei/article/details/54893622)
+
+- [JPA动态查询](http://blog.csdn.net/anxpp/article/details/51996472)
