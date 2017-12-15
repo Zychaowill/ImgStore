@@ -14,6 +14,7 @@
 	- [1](https://weibo.com/1401880315/E0mCVzY0Q?type=comment)
 	- [2](https://weibo.com/1401880315/E0NdXzA9C?type=comment#_rnd1513298499852)
 
+![](https://github.com/Zychaowill/ImgStore/blob/master/Distributed/before%20cache.bmp)
 ![](https://github.com/Zychaowill/ImgStore/blob/master/Distributed/cache.bmp)
 
 - [集群/分布式集群下5种session处理策略](http://blog.csdn.net/woaigaolaoshi/article/details/50902010)
