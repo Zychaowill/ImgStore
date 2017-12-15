@@ -10,6 +10,10 @@
 
 - [Redis在京东到家的订单中的使用](https://juejin.im/entry/598c0700f265da3e2c70fa83)
 
+- [缓存更新的套路](https://coolshell.cn/articles/17416.html)
+
+![]()
+
 - [集群/分布式集群下5种session处理策略](http://blog.csdn.net/woaigaolaoshi/article/details/50902010)
 
 - [Spring Session解决分布式Session问题的实现原理](http://blog.csdn.net/xlgen157387/article/details/60321984)
