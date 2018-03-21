@@ -1,0 +1,1 @@
+Collect resources according to time.
