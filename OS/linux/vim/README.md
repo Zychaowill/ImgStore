@@ -7,6 +7,7 @@ cw -> .
 A; -> j. -> j.  
 f+ -> s +  -> ;. -> ;.
 :%s/target/replacement/g
+dbx -> bdw -> daw (last win!)
 etc.
 ```
 
