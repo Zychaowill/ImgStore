@@ -1,3 +1,13 @@
+Please remember these shortcut command:
+```bash
+x -> .
+dw -> .
+dd -> .
+cw -> .
+
+A; -> j. -> j.  etc.
+```
+
 #### Ò»¼ýË«µñ
 
 - C => c$
