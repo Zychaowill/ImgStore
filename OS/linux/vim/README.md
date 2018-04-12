@@ -4,8 +4,10 @@ x -> .
 dw -> .
 dd -> .
 cw -> .
-
-A; -> j. -> j.  etc.
+A; -> j. -> j.  
+f+ -> s +  -> ;. -> ;.
+:%s/target/replacement/g
+etc.
 ```
 
 #### Ò»¼ıË«µñ
