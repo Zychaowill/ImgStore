@@ -58,6 +58,8 @@
 
 - [Java框架面经](http://blog.csdn.net/zhangchen124/article/details/77371786)
 
+- [Kotlin喧嚣过后，谈谈Java程序员未来的出路](http://blog.jobbole.com/111422/?utm_source=group.jobbole.com&utm_medium=relatedArticles)
+
 #### project
 
 - [移动购物APP设计与实现](http://blog.csdn.net/chen364567628/article/details/74586994)
