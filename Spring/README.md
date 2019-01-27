@@ -2,12 +2,12 @@
 
 ##### Resource Link
 
-- [SpringÊµÏÖ¶ÁĞ´·ÖÀë](http://blog.csdn.net/zhanglei721/article/details/77444712)
+- [Springå®ç°è¯»å†™åˆ†ç¦»](http://blog.csdn.net/zhanglei721/article/details/77444712)
 
-- [±¯¹ÛËø](http://blog.csdn.net/u011159417/article/details/76566046)
+- [æ‚²è§‚é”](http://blog.csdn.net/u011159417/article/details/76566046)
 
-- [Java²¢·¢ÎÊÌâ - ÀÖ¹ÛËøÓë±¯¹ÛËøÒÔ¼°ÀÖ¹ÛËøµÄÒ»ÖÖÊµÏÖ·½Ê½](https://www.cnblogs.com/qjjazry/p/6581568.html)
+- [Javaå¹¶å‘é—®é¢˜ - ä¹è§‚é”ä¸æ‚²è§‚é”ä»¥åŠä¹è§‚é”çš„ä¸€ç§å®ç°æ–¹å¼](https://www.cnblogs.com/qjjazry/p/6581568.html)
 
-- [JavaÖĞÀÖ¹ÛËøÓë±¯¹ÛËøµÄÊµÏÖ](http://blog.csdn.net/qq32933432/article/details/51036361)
+- [Javaä¸­ä¹è§‚é”ä¸æ‚²è§‚é”çš„å®ç°](http://blog.csdn.net/qq32933432/article/details/51036361)
 
-- [ÀÖ¹Û/±¯¹ÛËø  CAS(Compare and Swap)](https://www.cnblogs.com/zhangjwcode/p/7145647.html)
+- [ä¹è§‚/æ‚²è§‚é”  CAS(Compare and Swap)](https://www.cnblogs.com/zhangjwcode/p/7145647.html)
