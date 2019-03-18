@@ -42,6 +42,8 @@
 
 - [后端架构师技术图谱](https://blog.csdn.net/qq_42803530/article/details/82783439)
 
+- [架构师日志-消息队列技术点梳理](https://blog.csdn.net/Fly_Eason/article/details/82974388)
+
 #### experience summary
 
 - [those projects you can join](http://blog.csdn.net/xjmcsdn/article/details/52403618)
