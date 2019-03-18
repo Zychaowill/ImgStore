@@ -40,6 +40,8 @@
 
 - [十大海量数据处理及总结](http://blog.csdn.net/v_july_v/article/details/6279498/)
 
+- [后端架构师技术图谱](https://blog.csdn.net/qq_42803530/article/details/82783439)
+
 #### experience summary
 
 - [those projects you can join](http://blog.csdn.net/xjmcsdn/article/details/52403618)
