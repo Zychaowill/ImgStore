@@ -1,4 +1,4 @@
-## 企业大数据应用
+## Bussiness BigData
 
 - [唯品会大数据平台优化](https://www.ctolib.com/topics-127606.html)
 
